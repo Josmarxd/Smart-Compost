@@ -1,0 +1,21 @@
+lib/
+├── main.dart                          // Splash con animación
+├── screens/
+│   ├── home_screen.dart               // 🏠 Pantalla 1: Inicio
+│   ├── connection_screen.dart         // 📡 Pantalla 2: Conectar WiFi
+│   ├── measurement_screen.dart        // 📊 Pantalla 3: Medición en vivo
+│   └── tips_screen.dart               // 💡 Pantalla 4: Consejos
+├── widgets/
+│   ├── bottom_nav_bar.dart            // Barra de navegación abajo
+│   └── tip_card.dart                  // Tarjeta de consejos
+└── services/
+    └── esp32_service.dart             // Conexión con el ESP32
+
+
+
+
+ESP32:
+  Pin 34 → Sensor pH (DATA)
+  Pin 35 → Sensor TDS (DATA)
+  3.3V  → VCC de ambos sensores
+  GND   → GND de ambos sensores
